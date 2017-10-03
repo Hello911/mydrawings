@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+<style>
+ html,body{
+    height:100vh;
+    background:grey;
+    font-family: 'Special Elite', cursive;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+   }
+  .item{
+  font-size:100px;
+  }
+  .nav{
+  z-index:1;
+  height:100%;
+  width:0;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#111;
+  transition: 0.5s;
+  }
+  .open{
+  position:fixed;
+  left:0;
+  top:0;
+  padding:20px;
+  font-size:30px;
+  }
+  .open:hover{
+  color:#f1f1f1;
+  }
+  .close{
+  position:absolute;
+  top:0;
+  right:0;
+  padding:20px;
+  color:#818181;
+  font-size:60px;
+  }
+  .close:hover{
+  color:#f1f1f1;
+  }
+</style>
+</head>
+<body>
+
+<div class='item'>G. Chen's Drawings</div>
+<div class='nav' id='mynav'>
+ <a class="close" onclick="closeNav()">&times;</a>
+</div>
+<span onclick="openNav()" class='open'>&#9776 Gallery</span>
+
+<script>
+ function openNav() {
+    document.getElementById("mynav").style.width = "100vw";
+}
+ function closeNav() {
+    document.getElementById("mynav").style.width = "0vw";
+}
+</script>
+</body>
+</html>
