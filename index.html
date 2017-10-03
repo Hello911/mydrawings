@@ -25,3 +25,44 @@
   background:#111;
   transition: 0.5s;
   }
+  .open{
+  position:fixed;
+  left:0;
+  top:0;
+  padding:20px;
+  font-size:30px;
+  }
+  .open:hover{
+  color:#f1f1f1;
+  }
+  .close{
+  position:absolute;
+  top:0;
+  right:0;
+  padding:20px;
+  color:#818181;
+  font-size:60px;
+  }
+  .close:hover{
+  color:#f1f1f1;
+  }
+</style>
+</head>
+<body>
+
+<div class='item'>G. Chen's Drawings</div>
+<div class='nav' id='mynav'>
+ <a class="close" onclick="closeNav()">&times;</a>
+</div>
+<span onclick="openNav()" class='open'>&#9776 Gallery</span>
+
+<script>
+ function openNav() {
+    document.getElementById("mynav").style.width = "100vw";
+}
+ function closeNav() {
+    document.getElementById("mynav").style.width = "0vw";
+}
+</script>
+</body>
+</html>
