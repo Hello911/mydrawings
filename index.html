@@ -24,6 +24,7 @@
   left:0;
   background:#111;
   transition: 0.5s;
+  overflow-x:hidden;
   }
   .open{
   position:fixed;
@@ -46,16 +47,38 @@
   .close:hover{
   color:#f1f1f1;
   }
+ul{
+  list-style-type:none;
+  text-align:center;
+  color:grey;
+}
 </style>
 </head>
 <body>
 
 <div class='item'>G. Chen's Drawings</div>
+
 <div class='nav' id='mynav'>
  <a class="close" onclick="closeNav()">&times;</a>
+  <ul>
+   <li>1.Horse Eye (Pencil)</li>
+   <li><img src="https://user-images.githubusercontent.com/24628125/31184132-90a37a5a-a8f6-11e7-89ba-4bc8ca7484d8.png" alt="horse eye" width="300" height="150"></li>
+   <li>2.Ear (Pen)</li>
+   <li><img src="https://user-images.githubusercontent.com/24628125/31201938-851163c2-a92e-11e7-822e-0d3153ec2422.jpg" alt="horse eye" width="120" height="200"></li>
+    <li>3.Car (Pen)</li>
+    <li><img src="https://user-images.githubusercontent.com/24628125/31201905-6cb528ea-a92e-11e7-80d0-b4a188384693.jpg" alt="horse eye" width="300" height="150"></li>
+    <li>4.Face (Pen)</li>
+    <li><img src="https://user-images.githubusercontent.com/24628125/31201948-922bacfc-a92e-11e7-87fc-377fea77896b.jpg" alt="horse eye" width="140" height="200"></li>
+    <li>5.Candle (Acrylic)</li>
+    <li><img src="https://user-images.githubusercontent.com/24628125/31201893-64f13ea0-a92e-11e7-9148-a1a0ddaf9413.jpg" alt="horse eye" width="140" height="200"></li>
+    <li>6.Apple (Acrylic)</li>
+    <li><img src="https://user-images.githubusercontent.com/24628125/31201944-8bc382ea-a92e-11e7-8119-91035e1c7c1f.jpg" alt="horse eye" width="280" height="150"></li>
+    <li>7.Sphere (Oil Pastel)</li>
+    <li><img src="https://user-images.githubusercontent.com/24628125/31201883-5dde43ce-a92e-11e7-8331-c5d016f09a14.png" alt="horse eye" width="200" height="200"></li>
+  </ul>
 </div>
-<span onclick="openNav()" class='open'>&#9776 Gallery</span>
 
+<span onclick="openNav()" class='open'>&#9776 Gallery</span>
 <script>
  function openNav() {
     document.getElementById("mynav").style.width = "100vw";
